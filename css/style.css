@@ -518,6 +518,3 @@ em { font-style: italic; }
   .footer__bottom { flex-direction: column; align-items: flex-start; }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html:not(.force-motion) *, html:not(.force-motion) *::before, html:not(.force-motion) *::after { animation: none !important; transition: none !important; }
-}

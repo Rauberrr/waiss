@@ -12,7 +12,7 @@ Site estático (HTML, CSS e JS puros) da rede Waiss: Chocolates, Gelatos e Panet
 py -m http.server 5520
 ```
 
-Abra `http://localhost:5520`. Em computadores com "animações desligadas" no sistema, use `?motion=1` para ver as animações.
+Abra `http://localhost:5520`.
 
 ## Estrutura
 

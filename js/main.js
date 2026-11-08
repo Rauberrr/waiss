@@ -7,11 +7,11 @@
   const $ = (s, r = document) => r.querySelector(s);
   const $$ = (s, r = document) => Array.from(r.querySelectorAll(s));
   const clamp = (v, a, b) => Math.min(b, Math.max(a, v));
-  const forceMotion = /[?&]motion=1/.test(location.search);
-  const reduce = !forceMotion && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   const hasGsap = !!(window.gsap && window.ScrollTrigger);
-  const animate = hasGsap && !reduce;
-  if (forceMotion) document.documentElement.classList.add("force-motion");
+  // As animações são guiadas pelo scroll (o visitante controla o ritmo), então
+  // rodam sempre, inclusive no Windows com "Efeitos de animação" desligado.
+  // A versão estática fica só como reserva se o GSAP não carregar.
+  const animate = hasGsap;
 
   /* gerador pseudo-aleatório com semente (resultados estáveis) */
   function rng(seed) {
