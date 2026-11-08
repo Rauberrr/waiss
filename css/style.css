@@ -398,6 +398,18 @@ em { font-style: italic; }
 .hl__body { padding: 24px 26px 30px; }
 .hl h3 { margin: 12px 0 8px; font-family: var(--serif); font-weight: 400; font-size: 28px; line-height: 1.1; }
 .hl p { margin: 0; color: var(--muted); font-size: 15px; }
+
+/* Notebooks e telas baixas: cards mais compactos para caber com a descrição */
+@media (min-width: 701px) and (max-height: 860px) {
+  .hl__pin { padding: calc(var(--nav-h) + 8px) 0 28px; }
+  .hl__head { margin-bottom: 22px; }
+  .hl__head .display { font-size: clamp(36px, 4.4vw, 60px); }
+  .hl__head .eyebrow { margin-bottom: 10px; }
+  .hl__media { aspect-ratio: 1 / .62; }
+  .hl__body { padding: 16px 22px 22px; }
+  .hl h3 { margin: 8px 0 6px; font-size: 24px; }
+  .hl p { font-size: 14px; line-height: 1.5; }
+}
 .tag {
   display: inline-block; padding: 5px 12px; border-radius: 999px;
   background: var(--cream);

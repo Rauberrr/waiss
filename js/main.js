@@ -468,9 +468,13 @@
     mm.add("(min-width: 701px)", () => {
       const track = $("#hlTrack");
       const dist = () => Math.max(0, track.scrollWidth - window.innerWidth);
+      const section = $(".highlights");
+      // Só trava quando os cards inteiros (com a descrição) estiverem na tela.
+      // Se a seção for mais alta que a tela, espera o fim dela chegar embaixo.
+      const startAt = () => (section.offsetHeight > window.innerHeight ? "bottom bottom" : "top top");
       const tween = gsap.to(track, {
         x: () => -dist(), ease: "none",
-        scrollTrigger: { trigger: ".highlights", start: "top top", end: () => "+=" + dist(), scrub: 1, pin: true, invalidateOnRefresh: true, anticipatePin: 1 }
+        scrollTrigger: { trigger: section, start: startAt, end: () => "+=" + dist(), scrub: 1, pin: true, invalidateOnRefresh: true, anticipatePin: 1 }
       });
       // fotos com leve parallax e recortes que giram dentro do scroll horizontal
       $$(".hl__media img").forEach((img) => {
