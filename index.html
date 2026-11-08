@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Waiss · Chocolates, Gelatos e Panettones</title>
+  <meta name="description" content="Waiss: chocolates finos, gelataria italiana e panettones de fermentação natural o ano todo. Encontre a unidade Waiss mais próxima de você.">
+  <meta name="theme-color" content="#F6EEE3">
+  <meta property="og:title" content="Waiss · Chocolates, Gelatos e Panettones o ano todo">
+  <meta property="og:description" content="Conheça e se apaixone pelos Chocolates Especiais Waiss.">
+  <meta property="og:image" content="imagem/varias-barras-de-chocolates.jpg">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAV ============ -->
+  <header class="nav" id="nav">
+    <a class="nav__logo" href="#top" aria-label="Waiss — início">
+      <img src="assets/logo-cocoa.png" alt="Waiss" width="706" height="238">
+    </a>
+    <nav class="nav__links" aria-label="Principal">
+      <a href="#destaques" data-i18n="nav.highlights">Queridinhos</a>
+      <a href="#essencia" data-i18n="nav.about">Essência</a>
+      <a href="#lojas" data-i18n="nav.stores">Unidades</a>
+    </nav>
+    <div class="nav__right">
+      <div class="lang" role="group" aria-label="Idioma">
+        <button type="button" data-lang="pt" aria-pressed="true">PT</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      </div>
+      <a class="btn btn--dark btn--sm" href="https://wa.me/5541996207700" target="_blank" rel="noopener">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.8-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.6-.3Z"/></svg>
+        <span data-i18n="nav.cta">Fale conosco</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO / BISCOTTI ============ -->
+    <section class="hero" id="top">
+      <div class="hero__pin">
+        <div class="hero__glow" aria-hidden="true"></div>
+
+        <div class="hero__copy">
+          <p class="eyebrow" data-i18n="hero.eyebrow">Chocolateria · Gelataria · Panificação</p>
+          <h1 class="hero__title" data-i18n-html="hero.title">Chocolates, Gelatos <br>e Panettones <em>o ano todo.</em></h1>
+          <p class="hero__sub" data-i18n="hero.sub">Conheça e se apaixone pelos Chocolates Especiais Waiss.</p>
+        </div>
+
+        <div class="hero__stage" aria-hidden="true">
+          <div class="b3d" id="b3d">
+            <div class="b3d__tilt">
+              <div class="b3d__spin" id="b3dSpin"></div>
+            </div>
+          </div>
+          <div class="hero__shadow"></div>
+        </div>
+
+        <ol class="hero__steps" aria-hidden="true">
+          <li><span>01</span><b data-i18n="hero.step1">Biscoito fino, dourado no forno</b></li>
+          <li><span>02</span><b data-i18n="hero.step2">Gelato artesanal, denso e cremoso</b></li>
+          <li><span>03</span><b data-i18n="hero.step3">Crocância em cada fragmento</b></li>
+        </ol>
+
+        <div class="hero__reveal">
+          <p class="eyebrow" data-i18n="hero.revealEyebrow">Assinatura da casa</p>
+          <h2 class="display">Biscotti Gelato</h2>
+          <p data-i18n="hero.revealText">A extrema cremosidade do gelato artesanal encontra a delicadeza crocante de biscoitos finos italianos.</p>
+          <a class="btn btn--dark" href="#lojas" data-i18n="hero.revealCta">Encontre a unidade mais próxima</a>
+        </div>
+
+        <div class="scroll-hint">
+          <span data-i18n="hero.hint">Role para montar</span>
+          <i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUERIDINHOS ============ -->
+    <section class="highlights" id="destaques">
+      <div class="hl__pin">
+        <div class="hl__head wrap">
+          <p class="eyebrow" data-i18n="hl.eyebrow">Destaques</p>
+          <h2 class="display" data-i18n-html="hl.title">Os queridinhos <em>da casa.</em></h2>
+        </div>
+        <div class="hl__track" id="hlTrack">
+          <article class="hl">
+            <div class="hl__media"><img src="imagem/Biscotti-Gelato.jpg" alt="Biscotti Gelato Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.sig">Assinatura</span>
+              <h3>Biscotti Gelato</h3>
+              <p data-i18n="hl.p1">Sobremesa exclusiva que une a extrema cremosidade do gelato artesanal à delicadeza e textura crocante de biscoitos finos italianos.</p>
+            </div>
+          </article>
+
+          <article class="hl">
+            <div class="hl__media"><img src="imagem/Cremino-de-Pistache.jpg" alt="Cremino de Pistache Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.choc">Chocolate</span>
+              <h3 data-i18n="hl.n2">Cremino de Pistache</h3>
+              <p data-i18n="hl.p2">Chocolate nobre em camadas inspiradas no clássico formato italiano, com textura aveludada e sabor intenso de pistache puro.</p>
+            </div>
+          </article>
+
+          <article class="hl">
+            <div class="hl__media hl__media--cut hl__media--blue"><img class="cut cut--wide" src="assets/produtos/coco-blue.webp" alt="Coco Blue Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.bonbon">Bombom</span>
+              <h3>Coco Blue</h3>
+              <p data-i18n="hl.p3">Um dos clássicos mais amados: generosa cobertura de chocolate ao leite e recheio úmido e irresistível de coco ralado.</p>
+            </div>
+          </article>
+
+          <article class="hl">
+            <div class="hl__media"><img src="imagem/Bollz-Crispy.jpg" alt="Bollz Crispy Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.drag">Drageado</span>
+              <h3>Bollz Crispy</h3>
+              <p data-i18n="hl.p4">Drageados redondos de chocolate nobre com núcleo de cereal expandido altamente crocante. Perfeitos para qualquer momento.</p>
+            </div>
+          </article>
+
+          <article class="hl">
+            <div class="hl__media hl__media--cut hl__media--gold"><img class="cut cut--tall" src="assets/produtos/napo-duets.webp" alt="Barra Napo Duets Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.bar">Barra</span>
+              <h3>Napo Duets</h3>
+              <p data-i18n="hl.p5">O dueto perfeito: chocolate branco cremoso e chocolate ao leite clássico unidos em um só pedaço.</p>
+            </div>
+          </article>
+
+          <article class="hl">
+            <div class="hl__media"><img src="imagem/panettone-conjunto-de-3.jpg" alt="Panettones Waiss" loading="lazy"></div>
+            <div class="hl__body">
+              <span class="tag" data-i18n="hl.yr">O ano todo</span>
+              <h3 data-i18n="hl.n6">Estação Panettone</h3>
+              <p data-i18n="hl.p6">Gotas de chocolate, chocolate &amp; pecan e mais sabores, com fermentação natural, em qualquer mês do ano.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CHOCOLATE BAR BREAK ============ -->
+    <section class="choco" id="chocolates">
+      <svg class="drip drip--cream" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="choco__pin">
+        <div class="choco__behind">
+          <p class="eyebrow eyebrow--light" data-i18n="bar.eyebrow">Chocolates finos</p>
+          <h2 class="display display--light" data-i18n-html="bar.title">A máxima expressão <em>do cacau.</em></h2>
+          <ul class="choco__list">
+            <li data-i18n="bar.l1">Trufas</li>
+            <li data-i18n="bar.l2">Barras</li>
+            <li data-i18n="bar.l3">Bombons</li>
+            <li data-i18n="bar.l4">Creminos</li>
+            <li data-i18n="bar.l5">Drageados</li>
+          </ul>
+        </div>
+        <div class="bar3d" aria-hidden="true">
+          <div class="bar" id="bar"></div>
+        </div>
+        <p class="choco__hint" data-i18n="bar.hint">Role para quebrar</p>
+      </div>
+    </section>
+
+    <!-- ============ ESSÊNCIA / 4 VERTICAIS ============ -->
+    <section class="essence" id="essencia">
+      <svg class="drip drip--choco" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"></svg>
+      <div class="wrap">
+        <p class="eyebrow" data-i18n="about.eyebrow">Nossa essência</p>
+        <p class="manifesto" data-i18n="about.manifesto">Diferente das fábricas de chocolate tradicionais e massificadas, a Waiss é feita à mão, com tempo e com cuidado. Quatro experiências, um só propósito: fazer você se apaixonar.</p>
+
+        <div class="verticals">
+          <!-- 01 Chocolates finos -->
+          <article class="vert">
+            <div class="vert__art vert__art--gold art-choco">
+              <img class="vert__cut cut-napo" src="assets/produtos/napo-duets.webp" alt="Barra de chocolate Napo Duets Waiss" loading="lazy">
+            </div>
+            <span class="vert__num">01</span>
+            <h3 data-i18n="about.v1t">Chocolates Finos</h3>
+            <p data-i18n="about.v1d">Foco na máxima expressão e pureza do cacau, priorizando texturas singulares e sabores refinados em seus bombons, creminos e drageados.</p>
+          </article>
+
+          <!-- 02 Fermentação natural -->
+          <article class="vert">
+            <div class="vert__art vert__art--wine art-panettone">
+              <img class="vert__cut cut-pan" src="assets/produtos/panettone-chocolate-pecan.webp" alt="Panettone Waiss Chocolate e Pecan" loading="lazy">
+            </div>
+            <span class="vert__num">02</span>
+            <h3 data-i18n="about.v2t">Fermentação Natural</h3>
+            <p data-i18n="about.v2d">O resgate à paciência do método tradicional: panettones artesanais de alta qualidade durante o ano inteirinho.</p>
+          </article>
+
+          <!-- 03 Gelataria italiana -->
+          <article class="vert">
+            <div class="vert__art art-gelato">
+              <svg viewBox="0 0 320 240" role="img" aria-label="Gelato sendo servido">
+                <defs>
+                  <radialGradient id="gScoopA" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#fffaf0"/><stop offset="1" stop-color="#ecd9b4"/></radialGradient>
+                  <radialGradient id="gScoopB" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#c9d79a"/><stop offset="1" stop-color="#8e9f5c"/></radialGradient>
+                  <radialGradient id="gScoopC" cx="40%" cy="30%" r="80%"><stop offset="0" stop-color="#9a6847"/><stop offset="1" stop-color="#5a3424"/></radialGradient>
+                </defs>
+                <ellipse cx="160" cy="216" rx="90" ry="10" fill="#3b241a" opacity=".08"/>
+                <g class="scoop" data-i="0"><path d="M98 150a34 30 0 0 1 68 0c-6 6-12-2-17 4s-11-3-17 3-11-3-17 2-11-4-17-9z" fill="url(#gScoopC)"/></g>
+                <g class="scoop" data-i="1"><path d="M154 150a34 30 0 0 1 68 0c-6 6-12-2-17 4s-11-3-17 3-11-3-17 2-11-4-17-9z" fill="url(#gScoopB)"/></g>
+                <g class="scoop" data-i="2"><path d="M124 118a36 32 0 0 1 72 0c-6 6-12-2-18 4s-12-3-18 3-12-3-18 2-12-4-18-9z" fill="url(#gScoopA)"/></g>
+                <path d="M84 150h152l-14 60a8 8 0 0 1-8 6H106a8 8 0 0 1-8-6z" fill="#f6eee3" stroke="#3b241a" stroke-width="3"/>
+                <path d="M96 170h128" stroke="#b8893e" stroke-width="2" opacity=".6"/>
+                <g class="spoon"><path d="M228 92l40-44" stroke="#b8893e" stroke-width="6" stroke-linecap="round"/><ellipse cx="222" cy="100" rx="9" ry="13" transform="rotate(42 222 100)" fill="#b8893e"/></g>
+              </svg>
+            </div>
+            <span class="vert__num">03</span>
+            <h3 data-i18n="about.v3t">Gelataria Italiana</h3>
+            <p data-i18n="about.v3d">Gelatos cremosos que deram origem a criações exclusivas da marca, como o aclamado Biscotti Gelato.</p>
+          </article>
+
+          <!-- 04 Cafés e combos -->
+          <article class="vert">
+            <div class="vert__art art-coffee">
+              <svg viewBox="0 0 320 240" role="img" aria-label="Xícara de café com bombom">
+                <ellipse cx="160" cy="214" rx="110" ry="10" fill="#3b241a" opacity=".08"/>
+                <g class="steam" fill="none" stroke="#b8893e" stroke-width="3" stroke-linecap="round" opacity=".6"><path d="M128 74c-8-10 8-14 0-26"/><path d="M150 66c-8-10 8-14 0-26"/><path d="M172 74c-8-10 8-14 0-26"/></g>
+                <g class="saucer"><ellipse cx="150" cy="198" rx="86" ry="14" fill="#efe4d3" stroke="#3b241a" stroke-width="3"/></g>
+                <g class="cup">
+                  <path d="M96 96h108v52a42 42 0 0 1-42 42h-24a42 42 0 0 1-42-42z" fill="#fbf7f1" stroke="#3b241a" stroke-width="3"/>
+                  <path d="M204 110h10a18 18 0 0 1 0 36h-12" fill="none" stroke="#3b241a" stroke-width="3"/>
+                  <ellipse cx="150" cy="98" rx="52" ry="8" fill="#5a3424"/>
+                  <path d="M132 98c8-5 28-5 36 0" stroke="#c98a45" stroke-width="2.5" fill="none"/>
+                </g>
+                <g class="bonbon"><circle cx="248" cy="186" r="16" fill="#4f2c19"/><path d="M236 180c6-5 10 3 16-2s8 2 12-1" stroke="#c98a45" stroke-width="2" fill="none" stroke-linecap="round"/></g>
+              </svg>
+              <span class="vert__flag" data-i18n="about.v4flag">Em algumas unidades</span>
+            </div>
+            <span class="vert__num">04</span>
+            <h3 data-i18n="about.v4t">Cafés &amp; Combos</h3>
+            <p data-i18n="about.v4d">Cafés e combos especiais para acompanhar cada pedaço, disponíveis em algumas unidades da rede.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UNIDADES ============ -->
+    <section class="stores" id="lojas">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow" data-i18n="st.eyebrow">Nossas unidades</p>
+          <h2 class="display" data-i18n-html="st.title">Encontre a Waiss <em>mais perto de você.</em></h2>
+          <p class="sec-head__sub" data-i18n="st.sub">Consulte a unidade mais próxima. Atendimento e pedidos de toda a rede pelo WhatsApp (41) 99620-7700.</p>
+        </div>
+
+        <div class="stores__grid">
+          <div class="stores__list" id="storeList"></div>
+          <div class="stores__map">
+            <iframe id="storeMap" title="Mapa da unidade" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <svg class="drip drip--cream" viewBox="0 0 1440 220" preserveAspectRatio="none" aria-hidden="true"></svg>
+    <div class="wrap footer__inner">
+      <p class="footer__big" data-i18n-html="ft.big">Sempre existe um bom motivo para <em>saborear Waiss!</em></p>
+      <a class="btn btn--cream" href="https://wa.me/5541996207700" target="_blank" rel="noopener" data-i18n="ft.cta">Chamar no WhatsApp</a>
+      <div class="footer__bottom">
+        <img src="assets/logo-white.png" alt="Waiss" class="footer__logo" width="706" height="238" loading="lazy">
+        <p data-i18n="ft.slogan">Chocolates, Gelatos e Panettones o ano todo.</p>
+        <p class="footer__copy">© <span id="year">2026</span> Waiss</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
