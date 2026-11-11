@@ -2,6 +2,8 @@
 
 Site estático (HTML, CSS e JS puros) da rede Waiss: Chocolates, Gelatos e Panettones o ano todo.
 
+**No ar:** https://rauberrr.github.io/waiss/
+
 - Animações com GSAP + ScrollTrigger e rolagem suave com Lenis (via CDN)
 - Biscotti Gelato em 3D montado no scroll, barra de chocolate que quebra e calda escorrendo entre seções
 - Português, inglês e espanhol (`js/i18n.js`, que também guarda os dados das unidades)
